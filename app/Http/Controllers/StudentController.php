@@ -12,7 +12,8 @@ class StudentController extends Controller
         return Student::all();
     }
     function addStudent(Request $request){
-        return $request->input();
+    $student = Student::create($request->only(['name', 'email', 'roll_number']));
+    return response()->json($student, 201);
     }
 
 
