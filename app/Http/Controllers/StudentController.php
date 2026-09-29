@@ -11,10 +11,10 @@ class StudentController extends Controller
     {
         return Student::all();
     }
-    function addStudent(Request $request){
-    $student = Student::create($request->only(['name', 'email', 'roll_number']));
-    return response()->json($student, 201);
+
+    public function addStudent(Request $request)
+    {
+        $student = Student::create($request->only(['name', 'email', 'roll_number']));
+        return response()->json($student, 201);
     }
-
-
 }

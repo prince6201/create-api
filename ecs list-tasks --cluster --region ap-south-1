@@ -1,0 +1,161 @@
+{
+    "services": [
+        {
+            "serviceArn": "arn:aws:ecs:ap-south-1:974853618209:service/laravel-cluster/Service-laravel",
+            "serviceName": "Service-laravel",
+            "clusterArn": "arn:aws:ecs:ap-south-1:974853618209:cluster/laravel-cluster",
+            "loadBalancers": [],
+            "serviceRegistries": [],
+            "status": "ACTIVE",
+            "desiredCount": 1,
+            "runningCount": 1,
+            "pendingCount": 0,
+            "launchType": "FARGATE",
+            "platformVersion": "LATEST",
+            "platformFamily": "Linux",
+            "taskDefinition": "arn:aws:ecs:ap-south-1:974853618209:task-definition/task-laravel:3",
+            "deploymentConfiguration": {
+                "deploymentCircuitBreaker": {
+                    "enable": true,
+                    "rollback": true,
+                    "resetOnHealthyTask": false,
+                    "thresholdConfiguration": {
+                        "type": "BOUNDED_PERCENT",
+                        "value": 50
+                    }
+                },
+                "maximumPercent": 200,
+                "minimumHealthyPercent": 100,
+                "strategy": "ROLLING",
+                "bakeTimeInMinutes": 0
+            },
+            "deployments": [
+                {
+                    "id": "ecs-svc/0516551169877104100",
+                    "status": "PRIMARY",
+                    "taskDefinition": "arn:aws:ecs:ap-south-1:974853618209:task-definition/task-laravel:3",
+                    "desiredCount": 1,
+                    "pendingCount": 0,
+                    "runningCount": 1,
+                    "failedTasks": 0,
+                    "createdAt": "2026-09-15T07:06:56.163000+00:00",
+                    "updatedAt": "2026-09-22T06:50:16.783000+00:00",
+                    "launchType": "FARGATE",
+                    "platformVersion": "1.4.0",
+                    "platformFamily": "Linux",
+                    "networkConfiguration": {
+                        "awsvpcConfiguration": {
+                            "subnets": [
+                                "subnet-0abbe6b4e47c9ddc8",
+                                "subnet-02cf3beff29c14629",
+                                "subnet-0ddfbe03a184b223e"
+                            ],
+                            "securityGroups": [
+                                "sg-0934f1296d43d68cc"
+                            ],
+                            "assignPublicIp": "ENABLED"
+                        }
+                    },
+                    "rolloutState": "COMPLETED",
+                    "rolloutStateReason": "ECS deployment ecs-svc/0516551169877104100 completed."
+                }
+            ],
+            "roleArn": "arn:aws:iam::974853618209:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "events": [
+                {
+                    "id": "db2414d1-55a5-4a1d-a499-3d8483f8662f",
+                    "createdAt": "2026-09-22T06:48:46.544000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 46b7ec124aeb49eeb9067cf383b4f4cf)."
+                },
+                {
+                    "id": "a83399f3-a812-463a-b06d-ae8571b165dd",
+                    "createdAt": "2026-09-22T06:48:16.270000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "ab3bdf42-2c43-4321-ad2b-95d7c6353f4c",
+                    "createdAt": "2026-09-22T06:45:45.128000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 5723da4cca3a4d0aad77e3351e8fa50c)."
+                },
+                {
+                    "id": "65c27ccc-61a0-4096-9b28-4f48b11d57ec",
+                    "createdAt": "2026-09-22T06:45:14.347000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "3a68047c-25a2-40f1-b466-c185efb08de5",
+                    "createdAt": "2026-09-22T06:42:44.010000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 4abc4bb1581e474fae8f828b957919bd)."
+                },
+                {
+                    "id": "f1bf5fd0-6812-4a18-9c91-93e7f782369a",
+                    "createdAt": "2026-09-22T06:42:13.240000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "4f28592e-e5c1-473a-8950-f05b777368bb",
+                    "createdAt": "2026-09-22T06:39:40.276000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 275edfabf1a44d81ac8a756a53739c17)."
+                },
+                {
+                    "id": "33b38e86-6daa-4c53-89c7-0ed154c9c9f3",
+                    "createdAt": "2026-09-22T06:39:09.805000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "d04fc7a1-0d9a-407c-aa34-45369be25556",
+                    "createdAt": "2026-09-22T06:36:38.110000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task eab4b19783b44d46b99ddedefe9a4562)."
+                },
+                {
+                    "id": "b0ad830a-abff-430a-9a0c-c1f0ce682e93",
+                    "createdAt": "2026-09-22T06:34:05.751000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task c1ef24e59dc1474a86dadaee5fb360e9)."
+                },
+                {
+                    "id": "fec7eafa-9ac2-417c-a6ad-51d3e1dfdcff",
+                    "createdAt": "2026-09-22T06:31:33.370000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 7524e353aeca4f2e9aacb80308fe222a)."
+                },
+                {
+                    "id": "d26b5418-3181-42c6-8c69-5d8bca2a6007",
+                    "createdAt": "2026-09-22T06:31:03.875000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "e7a62844-9c0f-4555-ab08-45b322f5de67",
+                    "createdAt": "2026-09-22T06:28:31.764000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 97669367c32844d5a53a2cc0b76efd87)."
+                },
+                {
+                    "id": "f07f4d05-3630-42d6-a9ff-f77fafad5c5d",
+                    "createdAt": "2026-09-22T06:25:57.612000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task b4f1103838394fb896f5066d5e188485)."
+                },
+                {
+                    "id": "d413bc5f-390f-4265-ba6f-f1f0effe96f1",
+                    "createdAt": "2026-09-22T06:25:25.632000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "841579de-b080-4b61-82d2-463634d486f6",
+                    "createdAt": "2026-09-22T06:22:55.970000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task ba86b30c7cdf46f3a66904f15ba8214c)."
+                },
+                {
+                    "id": "848132cd-96d2-43e1-bd52-8351197ad7b9",
+                    "createdAt": "2026-09-22T06:22:24.206000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "10492a26-17da-4579-a9f4-23136d458dfa",
+                    "createdAt": "2026-09-22T06:19:53.802000+00:00",
+                    "message": "(service Service-laravel) has started 1 tasks: (task 78702aa954f14f29bed6b0185428ee2d)."
+                },
+                {
+                    "id": "8a525795-1c95-4ae7-8689-b0d61e166844",
+                    "createdAt": "2026-09-22T06:19:22.999000+00:00",
+                    "message": "(service Service-laravel) has reached a steady state."
+                },
+                {
+                    "id": "7a7697ff-bed9-4618
